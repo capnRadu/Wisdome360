@@ -18,21 +18,35 @@ public class TreeManager : MonoBehaviour
     public TreeSpecies[] species;
     public GameObject growEffectPrefab;       // particle system prefab
 
-    [Header("Placement")]
-    public Vector3 areaCenter = Vector3.zero;
-    public Vector2 areaSize = new Vector2(50, 50);
+    [Header("Placement (dome)")]
+    [Tooltip("The Dome Creator rig (the audience position).")]
+    public Transform viewer;
+    [Tooltip("180 = all the way round. 70 = only the front.")]
+    [Range(10f, 180f)] public float azimuthRange = 180f;
+    [Tooltip("1 = even spread round the room. 2-3 = more trees in front.")]
+    [Range(1f, 4f)] public float frontBias = 1.5f;
+    [Tooltip("Min distance should stay above ~6 m to leave visible ground.")]
+    public Vector2 distanceRange = new Vector2(6f, 35f);
     public LayerMask groundMask = ~0;
     public float minSpacing = 2f;
+    public int maxTrees = 300;
 
     [Header("Growth")]
     public float stageDuration = 20f;         // seconds per stage
     public float startScale = 0.8f;
     public float endScale = 1.3f;
 
+
     readonly List<Vector3> placed = new List<Vector3>();
+
+    [Header("Placement height")]
+    public bool useFixedHeight = true;
+    public float fixedHeight = 0f;   // world Y where trees are planted
 
     public bool Plant(string type)
     {
+        if (placed.Count >= maxTrees) return false;
+
         var sp = System.Array.Find(species, s => s.name == type.ToLower());
         if (sp == null) return false;
 
@@ -48,19 +62,37 @@ public class TreeManager : MonoBehaviour
 
     bool TryFindSpot(out Vector3 result)
     {
+        Vector3 center = viewer != null ? viewer.position : transform.position;
+
         for (int i = 0; i < 30; i++)
         {
-            var p = areaCenter + new Vector3(
-                Random.Range(-areaSize.x / 2, areaSize.x / 2), 100f,
-                Random.Range(-areaSize.y / 2, areaSize.y / 2));
+            float t = Random.Range(-1f, 1f);
+            float az = Mathf.Sign(t) * Mathf.Pow(Mathf.Abs(t), frontBias)
+                       * azimuthRange * Mathf.Deg2Rad;
 
-            if (!Physics.Raycast(p, Vector3.down, out var hit, 300f, groundMask)) continue;
+            float d = Mathf.Sqrt(Random.Range(distanceRange.x * distanceRange.x,
+                                              distanceRange.y * distanceRange.y));
+
+            var p = center + new Vector3(Mathf.Sin(az), 0f, -Mathf.Cos(az)) * d;
+
+            Vector3 point;
+            if (useFixedHeight)
+            {
+                point = new Vector3(p.x, fixedHeight, p.z);
+            }
+            else
+            {
+                p.y += 100f;
+                if (!Physics.Raycast(p, Vector3.down, out var hit, 300f, groundMask)) continue;
+                point = hit.point;
+            }
 
             bool free = true;
             foreach (var other in placed)
-                if ((other - hit.point).sqrMagnitude < minSpacing * minSpacing) { free = false; break; }
+                if ((other - point).sqrMagnitude < minSpacing * minSpacing)
+                { free = false; break; }
 
-            if (free) { result = hit.point; return true; }
+            if (free) { result = point; return true; }
         }
         result = default;
         return false;
@@ -75,7 +107,23 @@ public class TreeManager : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
+        Vector3 c = viewer != null ? viewer.position : transform.position;
         Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(areaCenter, new Vector3(areaSize.x, 1, areaSize.y));
+        DrawRing(c, distanceRange.x);
+        DrawRing(c, distanceRange.y);
+    }
+
+    void DrawRing(Vector3 c, float radius)
+    {
+        const int steps = 64;
+        float range = azimuthRange * Mathf.Deg2Rad;
+        Vector3 prev = c + new Vector3(Mathf.Sin(-range), 0f, -Mathf.Cos(-range)) * radius;
+        for (int i = 1; i <= steps; i++)
+        {
+            float a = Mathf.Lerp(-range, range, i / (float)steps);
+            Vector3 cur = c + new Vector3(Mathf.Sin(a), 0f, -Mathf.Cos(a)) * radius;
+            Gizmos.DrawLine(prev, cur);
+            prev = cur;
+        }
     }
 }

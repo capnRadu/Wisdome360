@@ -1,13 +1,12 @@
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 using UnityEngine;
-using UnityEngine.UI;
 using ZXing;
 using ZXing.QrCode;
 
 public class TunnelQR : MonoBehaviour
 {
-    public RawImage qrImage;
+    public Renderer qrQuad;
 
     // Use the full path if "cloudflared" isn't found:
     // @"C:\Program Files (x86)\cloudflared\cloudflared.exe"
@@ -46,10 +45,13 @@ public class TunnelQR : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Q))
+            qrQuad.gameObject.SetActive(!qrQuad.gameObject.activeSelf);
+
         if (shown || tunnelUrl == null) return;
         shown = true;
         UnityEngine.Debug.Log("Tunnel URL: " + tunnelUrl);
-        qrImage.texture = MakeQR(tunnelUrl, 512);
+        qrQuad.material.mainTexture = MakeQR(tunnelUrl, 512);
     }
 
     Texture2D MakeQR(string text, int size)

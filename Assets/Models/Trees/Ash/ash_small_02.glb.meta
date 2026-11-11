@@ -29,7 +29,7 @@ ScriptedImporter:
   _importNormals: 0
   _importTangents: 0
   _importCamera: 2
-  _importAnimations: 2
+  _importAnimations: 0
   _mecanimHumanoidFlip: 0
   _mecanimHumanoidClips: 0
   _nonHumanoidRootNodeName: 
@@ -38,7 +38,7 @@ ScriptedImporter:
   _animationLoopPose: 0
   _animationLoopSettingsPerClip: 0
   _importMaterials: 1
-  _enableGpuInstancing: 0
+  _enableGpuInstancing: 1
   _texturesReadWriteEnabled: 1
   _generateMipMaps: 1
   _useSceneNameIdentifier: 1
@@ -54,13 +54,13 @@ ScriptedImporter:
 '
   optimizeGameObjects: 0
   materials:
-  - {instanceID: 0}
-  - {instanceID: 0}
+  - {fileID: 7858163901848026495, guid: 5cba2bd0d14acbb4d9d58617cfd7f49e, type: 3}
+  - {fileID: -5316684210946835829, guid: 5cba2bd0d14acbb4d9d58617cfd7f49e, type: 3}
   textures:
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
-  - {instanceID: 0}
+  - {fileID: 6983701643236107813, guid: 5cba2bd0d14acbb4d9d58617cfd7f49e, type: 3}
+  - {fileID: 8022499087761476943, guid: 5cba2bd0d14acbb4d9d58617cfd7f49e, type: 3}
+  - {fileID: 5230624929818990856, guid: 5cba2bd0d14acbb4d9d58617cfd7f49e, type: 3}
+  - {fileID: -2834534249764746836, guid: 5cba2bd0d14acbb4d9d58617cfd7f49e, type: 3}
   hasSceneData: 1
   hasAnimationData: 0
   hasMaterialData: 1
@@ -72,16 +72,16 @@ ScriptedImporter:
     used: 1
     required: 0
   _textures:
-  - texture: {instanceID: 0}
+  - texture: {fileID: 6983701643236107813, guid: 5cba2bd0d14acbb4d9d58617cfd7f49e, type: 3}
     shouldBeLinear: 1
     shouldBeNormalMap: 0
-  - texture: {instanceID: 0}
+  - texture: {fileID: 8022499087761476943, guid: 5cba2bd0d14acbb4d9d58617cfd7f49e, type: 3}
     shouldBeLinear: 0
     shouldBeNormalMap: 0
-  - texture: {instanceID: 0}
+  - texture: {fileID: 5230624929818990856, guid: 5cba2bd0d14acbb4d9d58617cfd7f49e, type: 3}
     shouldBeLinear: 1
     shouldBeNormalMap: 1
-  - texture: {instanceID: 0}
+  - texture: {fileID: -2834534249764746836, guid: 5cba2bd0d14acbb4d9d58617cfd7f49e, type: 3}
     shouldBeLinear: 0
     shouldBeNormalMap: 0
   _mainAssetIdentifier: scenes/AuxScene
