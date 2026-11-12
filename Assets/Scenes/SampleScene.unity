@@ -1470,7 +1470,7 @@ MonoBehaviour:
     m_Bits: 64
   minSpacing: 2
   maxTrees: 300
-  stageDuration: 3
+  stageDuration: 10
   startScale: 0.8
   endScale: 1.3
   useFixedHeight: 1
@@ -1766,9 +1766,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1810674799}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.9624553, z: 0.27144036, w: 0}
-  m_LocalPosition: {x: 0.3999977, y: 4.1992064, z: -9.9195175}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7660445, z: 0.6427875, w: 0}
+  m_LocalPosition: {x: 0, y: 15.6, z: -1.8500004}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2123628043}
