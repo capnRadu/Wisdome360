@@ -31,7 +31,7 @@ public class PhoneInputServer : MonoBehaviour
  <button data-t='pine'>Pine</button>
 </div>
 <script>
-var COOLDOWN = 7;
+var COOLDOWN = 10;
 var msg = document.getElementById('msg');
 var btns = document.querySelectorAll('button');
 var endAt = 0;
