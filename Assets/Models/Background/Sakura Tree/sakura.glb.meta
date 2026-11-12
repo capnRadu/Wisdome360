@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2cd4b6fa204ba3e4e8aa416bf740b507
+guid: 4778c2cbe94bb514cae3459a5bc2a096
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ ScriptedImporter:
   _generateMipMaps: 1
   _useSceneNameIdentifier: 1
   _textureCompression: -50
-  _gltfAsset: '<b>Generator: </b>Sketchfab-16.95.0
+  _gltfAsset: '<b>Generator: </b>Sketchfab-15.32.0
 
     <b>Version: </b>2.0
 
@@ -54,12 +54,11 @@ ScriptedImporter:
 '
   optimizeGameObjects: 0
   materials:
-  - {fileID: -1679833703921300976, guid: 2cd4b6fa204ba3e4e8aa416bf740b507, type: 3}
-  - {fileID: 3996196838361161255, guid: 2cd4b6fa204ba3e4e8aa416bf740b507, type: 3}
+  - {fileID: -4461878239403212906, guid: 4778c2cbe94bb514cae3459a5bc2a096, type: 3}
+  - {fileID: 8119908910937328147, guid: 4778c2cbe94bb514cae3459a5bc2a096, type: 3}
   textures:
-  - {fileID: 6983701643236107813, guid: 2cd4b6fa204ba3e4e8aa416bf740b507, type: 3}
-  - {fileID: 8022499087761476943, guid: 2cd4b6fa204ba3e4e8aa416bf740b507, type: 3}
-  - {fileID: 5230624929818990856, guid: 2cd4b6fa204ba3e4e8aa416bf740b507, type: 3}
+  - {fileID: 6983701643236107813, guid: 4778c2cbe94bb514cae3459a5bc2a096, type: 3}
+  - {fileID: 8022499087761476943, guid: 4778c2cbe94bb514cae3459a5bc2a096, type: 3}
   hasSceneData: 1
   hasAnimationData: 0
   hasMaterialData: 1
@@ -71,14 +70,11 @@ ScriptedImporter:
     used: 1
     required: 0
   _textures:
-  - texture: {fileID: 6983701643236107813, guid: 2cd4b6fa204ba3e4e8aa416bf740b507, type: 3}
+  - texture: {fileID: 6983701643236107813, guid: 4778c2cbe94bb514cae3459a5bc2a096, type: 3}
     shouldBeLinear: 0
     shouldBeNormalMap: 0
-  - texture: {fileID: 8022499087761476943, guid: 2cd4b6fa204ba3e4e8aa416bf740b507, type: 3}
+  - texture: {fileID: 8022499087761476943, guid: 4778c2cbe94bb514cae3459a5bc2a096, type: 3}
     shouldBeLinear: 0
     shouldBeNormalMap: 0
-  - texture: {fileID: 5230624929818990856, guid: 2cd4b6fa204ba3e4e8aa416bf740b507, type: 3}
-    shouldBeLinear: 1
-    shouldBeNormalMap: 1
   _mainAssetIdentifier: scenes/Sketchfab_Scene
   _importPlugins: []
