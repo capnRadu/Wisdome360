@@ -14,7 +14,7 @@ public class FlowerSpawner : MonoBehaviour
     public enum Shape { Rectangle, Ring }
 
     [Header("What to spawn")]
-    public Entry[] entries = new Entry[4];
+    public Entry[] entries = new Entry[3];
     [Min(0)] public int maxCount = 200;
 
     [Header("Where (centred on this object, or on 'center' if set)")]

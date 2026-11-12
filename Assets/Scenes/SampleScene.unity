@@ -1250,16 +1250,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FlowerSpawner
   entries:
   - prefab: {fileID: 864246911653801517, guid: fb9c5ecb5241fb7439001ff0f64ad65a, type: 3}
-    weight: 1
-    scaleRange: {x: 0.8, y: 1.2}
-  - prefab: {fileID: 6011656421092472540, guid: 994f9981e9e91b645a1a19627cca8f79, type: 3}
-    weight: 1
+    weight: 0.3
     scaleRange: {x: 0.8, y: 1.2}
   - prefab: {fileID: 7367623407020914001, guid: 850470b49a736fa44a5d38ef0fc562a7, type: 3}
-    weight: 3
+    weight: 1.7
     scaleRange: {x: 0.8, y: 1.2}
   - prefab: {fileID: 2210922565598804017, guid: 0039e419b3e24754984b8fe7317b4d72, type: 3}
-    weight: 5
+    weight: 8
     scaleRange: {x: 0.8, y: 1.2}
   maxCount: 50
   center: {fileID: 2123628043}
