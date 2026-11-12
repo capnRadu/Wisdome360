@@ -56,7 +56,7 @@ public class TreeManager : MonoBehaviour
         var go = new GameObject("Tree_" + sp.name);
         go.transform.SetPositionAndRotation(pos, Quaternion.Euler(0, Random.Range(0f, 360f), 0));
         var tree = go.AddComponent<GrowingTree>();
-        tree.Init(this, sp, Random.Range(0, 3));
+        tree.Init(this, sp, Random.Range(0, 1));
         return true;
     }
 

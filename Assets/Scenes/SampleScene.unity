@@ -1410,56 +1410,32 @@ MonoBehaviour:
   species:
   - name: ash
     small:
-    - {fileID: -8148156210950934553, guid: 150bc50db5b7bbd49aa940738038fc10, type: 3}
-    - {fileID: -8148156210950934553, guid: 5cba2bd0d14acbb4d9d58617cfd7f49e, type: 3}
-    - {fileID: -8148156210950934553, guid: 377e4c69bee45094188e12a12925e634, type: 3}
+    - {fileID: 8771091787928289351, guid: 150bc50db5b7bbd49aa940738038fc10, type: 3}
     medium:
-    - {fileID: -8148156210950934553, guid: 3ec02cf435752cf4fa065ece42fb948a, type: 3}
-    - {fileID: -8148156210950934553, guid: 42c116c2cf1f62442b2d6def01152000, type: 3}
-    - {fileID: -8148156210950934553, guid: d9488135024f42b4b9c8cd6cb5e51dd6, type: 3}
+    - {fileID: 8771091787928289351, guid: 3ec02cf435752cf4fa065ece42fb948a, type: 3}
     large:
-    - {fileID: -8148156210950934553, guid: 0ba47fab076660d499febf010338cbc2, type: 3}
-    - {fileID: -8148156210950934553, guid: e7ddb1f0d854efb4cbfc5fb68d1692eb, type: 3}
-    - {fileID: -8148156210950934553, guid: b623c927cccac9a4eaf6981f4c4260d3, type: 3}
+    - {fileID: 8771091787928289351, guid: 0ba47fab076660d499febf010338cbc2, type: 3}
   - name: aspen
     small:
-    - {fileID: -8148156210950934553, guid: eb6ef165a503a7f44863b7e47e7f2d82, type: 3}
-    - {fileID: -8148156210950934553, guid: 720406cbd5a67cd4c9defbe89269c4a2, type: 3}
-    - {fileID: -8148156210950934553, guid: 129ef361de1d09246a762c037f5741c1, type: 3}
+    - {fileID: 8771091787928289351, guid: eb6ef165a503a7f44863b7e47e7f2d82, type: 3}
     medium:
-    - {fileID: -8148156210950934553, guid: 9b4323457ff30254bb7c3c65af0c90cb, type: 3}
-    - {fileID: -8148156210950934553, guid: 22d2f2608009b7d4db66ac9b15edcb48, type: 3}
-    - {fileID: -8148156210950934553, guid: c3184b527338768439666d6c33c6e9cf, type: 3}
+    - {fileID: 8771091787928289351, guid: 9b4323457ff30254bb7c3c65af0c90cb, type: 3}
     large:
-    - {fileID: -8148156210950934553, guid: 187dfe1332d1003458741ec17ce676f2, type: 3}
-    - {fileID: -8148156210950934553, guid: 4bb88190c108b8449b50878a9e6a434b, type: 3}
-    - {fileID: -8148156210950934553, guid: 6c27f571ed7dee245ab9ac9972d5f723, type: 3}
+    - {fileID: 8771091787928289351, guid: 187dfe1332d1003458741ec17ce676f2, type: 3}
   - name: oak
     small:
-    - {fileID: -8148156210950934553, guid: d16fbad3d1e4b9445bf565068ac0fb75, type: 3}
-    - {fileID: -8148156210950934553, guid: 8cbadffdd37764445b1a5811ba42d35f, type: 3}
-    - {fileID: -8148156210950934553, guid: d49bb2d837d22c64c8ef9fc5209ed98f, type: 3}
+    - {fileID: 8771091787928289351, guid: d16fbad3d1e4b9445bf565068ac0fb75, type: 3}
     medium:
-    - {fileID: -8148156210950934553, guid: 75ab899bd9607724b86f379dcbf18a5a, type: 3}
-    - {fileID: -8148156210950934553, guid: 5f78ba8a9183bf446a42b6b9f84c453c, type: 3}
-    - {fileID: -8148156210950934553, guid: 1b070f0df9511004d92ced19644540b1, type: 3}
+    - {fileID: 8771091787928289351, guid: 75ab899bd9607724b86f379dcbf18a5a, type: 3}
     large:
-    - {fileID: -8148156210950934553, guid: 18c1b3e5b725ea64a8f0b7dd6faa2021, type: 3}
-    - {fileID: -8148156210950934553, guid: 78886e227ed77b64f8eca67cf4c96721, type: 3}
-    - {fileID: -8148156210950934553, guid: 322b4fca21fa9b14ca96e877bd084af9, type: 3}
+    - {fileID: 8771091787928289351, guid: 18c1b3e5b725ea64a8f0b7dd6faa2021, type: 3}
   - name: pine
     small:
-    - {fileID: -8148156210950934553, guid: 9b635ee6b33a65e45b1d4b52bb1fd2fb, type: 3}
-    - {fileID: -8148156210950934553, guid: 880999c7330f21740b931ecf5529d50e, type: 3}
-    - {fileID: -8148156210950934553, guid: d40d3a90dfcd52f4090d96d0c79a0a9e, type: 3}
+    - {fileID: 8771091787928289351, guid: 9b635ee6b33a65e45b1d4b52bb1fd2fb, type: 3}
     medium:
-    - {fileID: -8148156210950934553, guid: 42f46756c931f5a41bb5ccddcf7a2a07, type: 3}
-    - {fileID: -8148156210950934553, guid: ea41b438ca8588e4f9dac5fb76be41a8, type: 3}
-    - {fileID: -8148156210950934553, guid: 67d5e317df650e044b563032bfc42e9f, type: 3}
+    - {fileID: 8771091787928289351, guid: 42f46756c931f5a41bb5ccddcf7a2a07, type: 3}
     large:
     - {fileID: -8148156210950934553, guid: e8f9440eff43ed648a75b1cadf06cf5d, type: 3}
-    - {fileID: -8148156210950934553, guid: 87cb4cc4528db844da00798c9882e971, type: 3}
-    - {fileID: -8148156210950934553, guid: 2016f197a7979f144bcdf0f553474703, type: 3}
   growEffectPrefab: {fileID: 0}
   viewer: {fileID: 2123628043}
   azimuthRange: 180
